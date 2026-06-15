@@ -20,7 +20,7 @@ export default function HeroIntro() {
     <div className="flex flex-col items-center justify-center w-full min-h-screen z-10 pointer-events-none relative">
       <div className="absolute top-8 w-full px-8 md:px-16 flex justify-end gap-6 pointer-events-auto z-50">
         <a 
-          href="https://github.com/manasgurde21" 
+          href="https://github.com/manasgurde" 
           target="_blank" 
           rel="noreferrer" 
           className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#24292e]/80 border border-white/10 hover:border-[#24292e] hover:bg-[#24292e] text-white transition-all shadow-[0_0_15px_rgba(36,41,46,0.5)] backdrop-blur-md text-sm font-medium"

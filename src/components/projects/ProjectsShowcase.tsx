@@ -17,7 +17,7 @@ const PROJECTS = [
     image: "/job-portal.png",
     stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "AI Integration"],
     color: "#ff3366",
-    link: "https://github.com/manasgurde21",
+    link: "https://github.com/manasgurde",
     metrics: [
       { label: "Response Time", value: "<200ms" },
       { label: "Accuracy", value: "98.5%" }
@@ -31,7 +31,7 @@ const PROJECTS = [
     image: "/fraud-detection.png",
     stack: ["Python", "Machine Learning", "Data Science", "Scikit-Learn"],
     color: "#00ffcc",
-    link: "https://github.com/manasgurde21",
+    link: "https://github.com/manasgurde",
     metrics: [
       { label: "Precision Score", value: "96%" },
       { label: "Processing Time", value: "<50ms" }

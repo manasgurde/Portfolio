@@ -8,10 +8,8 @@ import { useStore } from '@/store/useStore';
 gsap.registerPlugin(ScrollTrigger);
 
 const TIMELINE_DATA = [
-  { year: "2027", title: "B.Tech in Computer Science Engineering", company: "Madhav Institute of Technology and Science, Gwalior", description: "Currently pursuing degree with a focus on core computer science, software engineering, and artificial intelligence. CGPA: 7.69" },
-  { year: "2024", title: "AI SaaS Application Developer", company: "Full Stack Project", description: "Developed a scalable AI-powered SaaS platform utilizing a modern full-stack framework." },
-  { year: "2023", title: "Machine Learning Engineer", company: "Python Project", description: "Built a machine learning model to identify fraudulent credit card transactions, optimizing fraud detection accuracy." },
-  { year: "2022", title: "Full Stack Developer", company: "React & Node.js Project", description: "Developed an AI-powered job portal featuring intelligent job matching and recommendations." }
+  { year: "2024", title: "Full Stack & AI Development", company: "Projects & Learning", description: "Started building real-world applications using React, Node.js, and modern AI frameworks. Developed scalable SaaS and machine learning solutions." },
+  { year: "2023", title: "Started B.Tech in Computer Science", company: "Madhav Institute of Technology and Science, Gwalior", description: "Joined college to pursue degree with a focus on core computer science, software engineering, and artificial intelligence." }
 ];
 
 export default function JourneyTimeline() {

@@ -19,7 +19,7 @@ const PROJECTS = [
     color: "#ff3366",
     link: "https://github.com/manasgurde21",
     metrics: [
-      { label: "Matches Made", value: "10,000+" },
+      { label: "Response Time", value: "<200ms" },
       { label: "Accuracy", value: "98.5%" }
     ]
   },
@@ -33,7 +33,7 @@ const PROJECTS = [
     color: "#00ffcc",
     link: "https://github.com/manasgurde21",
     metrics: [
-      { label: "Fraud Prevented", value: "$2.5M+" },
+      { label: "Precision Score", value: "96%" },
       { label: "Processing Time", value: "<50ms" }
     ]
   },
@@ -47,8 +47,8 @@ const PROJECTS = [
     color: "#aa00ff",
     link: "https://github.com/manasgurde21",
     metrics: [
-      { label: "Active Users", value: "50k+" },
-      { label: "Uptime", value: "99.99%" }
+      { label: "API Latency", value: "<100ms" },
+      { label: "Uptime", value: "99.9%" }
     ]
   }
 ];

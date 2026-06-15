@@ -57,7 +57,7 @@ export default function CurrentlyLearning() {
             <div className="text-4xl" style={{ textShadow: `0 0 20px ${topic.color}` }}>
               {topic.icon}
             </div>
-            <h3 className="text-xl md:text-2xl font-semibold text-white tracking-wide group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r transition-all" style={{ backgroundImage: `linear-gradient(to right, white, ${topic.color})` }}>
+            <h3 className="text-xl md:text-2xl font-semibold tracking-wide text-transparent bg-clip-text" style={{ backgroundImage: `linear-gradient(to right, #ffffff, ${topic.color})` }}>
               {topic.name}
             </h3>
           </div>

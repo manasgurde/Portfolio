@@ -56,13 +56,21 @@ export default function StoryChapter({ index, title, content }: StoryChapterProp
       ref={containerRef}
       className="relative w-full h-screen flex items-center justify-center snap-center"
     >
-      <div ref={textRef} className="max-w-4xl px-8 z-10">
-        <h2 className="text-4xl md:text-7xl font-bold mb-6 text-gradient tracking-tight">
-          {title}
-        </h2>
-        <p className="text-xl md:text-3xl text-gray-300 font-light leading-relaxed">
-          {content}
-        </p>
+      <div 
+        ref={textRef} 
+        className="max-w-4xl px-12 py-16 z-10 rounded-[2.5rem] bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl relative overflow-hidden"
+      >
+        {/* Subtle dynamic glow behind the text inside the card */}
+        <div className={`absolute -inset-20 opacity-20 blur-3xl transition-opacity duration-1000 z-0 pointer-events-none ${index === 1 ? 'bg-indigo-500' : 'bg-fuchsia-500'}`} />
+        
+        <div className="relative z-10">
+          <h2 className={`text-4xl md:text-7xl font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r ${index === 1 ? 'from-indigo-400 to-cyan-400' : 'from-fuchsia-400 to-pink-400'}`}>
+            {title}
+          </h2>
+          <p className="text-xl md:text-3xl text-gray-200 font-light leading-relaxed">
+            {content}
+          </p>
+        </div>
       </div>
     </section>
   );

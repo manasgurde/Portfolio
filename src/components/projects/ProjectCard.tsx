@@ -8,11 +8,12 @@ interface ProjectCardProps {
   image: string;
   color: string;
   link?: string;
+  isReversed?: boolean;
 }
 
-export default function ProjectCard({ title, subtitle, description, stack, image, color, link }: ProjectCardProps) {
+export default function ProjectCard({ title, subtitle, description, stack, image, color, link, isReversed = false }: ProjectCardProps) {
   return (
-    <div className="w-full min-h-[60vh] flex flex-col md:flex-row items-center gap-12 p-8 md:p-12 rounded-[2.5rem] bg-[#050510]/80 backdrop-blur-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden group">
+    <div className={`w-full min-h-[60vh] flex flex-col md:flex-row ${isReversed ? 'md:flex-row-reverse' : ''} items-center gap-12 p-8 md:p-16 rounded-[2.5rem] bg-[#050510]/80 backdrop-blur-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden group`}>
       {/* Dynamic Background Glow */}
       <div 
         className="absolute -inset-20 opacity-20 blur-3xl transition-transform duration-1000 group-hover:scale-110 group-hover:opacity-40 z-0 pointer-events-none" 

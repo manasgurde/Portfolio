@@ -69,14 +69,14 @@ export default function ProjectsShowcase() {
         <p className="mt-4 text-xl text-gray-400">Scroll to explore</p>
       </div>
       
-      <div className="relative w-full max-w-5xl mx-auto pb-32">
+      <div className="relative w-full max-w-6xl mx-auto pb-32">
         {PROJECTS.map((project, idx) => (
           <div 
             key={idx} 
-            className="w-full sticky mb-24 transition-transform duration-500"
-            style={{ top: `calc(15vh + ${idx * 2}rem)` }}
+            className="w-full sticky mb-32 transition-transform duration-500"
+            style={{ top: `calc(10vh + ${idx * 3}rem)` }}
           >
-            <ProjectCard {...project} />
+            <ProjectCard {...project} isReversed={idx % 2 !== 0} />
           </div>
         ))}
       </div>

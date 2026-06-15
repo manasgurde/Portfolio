@@ -5,6 +5,7 @@ import SkillsSection from "@/components/skills/SkillsSection";
 import JourneyTimeline from "@/components/journey/JourneyTimeline";
 import AchievementsSection from "@/components/achievements/AchievementsSection";
 import TestimonialCarousel from "@/components/testimonials/TestimonialCarousel";
+import ContactSection from "@/components/contact/ContactSection";
 
 export default function Home() {
   return (
@@ -34,6 +35,8 @@ export default function Home() {
       <AchievementsSection />
       
       <TestimonialCarousel />
+
+      <ContactSection />
     </div>
   );
 }

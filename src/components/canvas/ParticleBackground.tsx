@@ -19,6 +19,7 @@ const CHAPTER_COLORS = [
   new THREE.Color('#ff5555'), // Journey Timeline (5)
   new THREE.Color('#ffcc00'), // Achievements (6)
   new THREE.Color('#00ccff'), // Testimonials (7)
+  new THREE.Color('#001133'), // Contact (8)
 ];
 
 function ParticleCloud({ count = 5000 }: { count?: number }) {

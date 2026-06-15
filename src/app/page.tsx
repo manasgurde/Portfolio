@@ -17,13 +17,13 @@ export default function Home() {
       <StoryChapter 
         index={1} 
         title="The Journey" 
-        content="I've been building for the web for over a decade. What started as simple HTML pages has evolved into a passion for crafting immersive, interactive digital experiences." 
+        content="I am a motivated Full Stack Developer and AI enthusiast, currently pursuing my B.Tech in Computer Science. My passion lies in building intelligent, scalable web applications that solve real-world problems." 
       />
       
       <StoryChapter 
         index={2} 
         title="The Vision" 
-        content="My goal is to bridge the gap between design and engineering. I believe the best applications feel less like software and more like magic." 
+        content="From machine learning algorithms to responsive React frontends, I strive to bridge the gap between complex AI logic and user-centric software design. I believe in writing code that is not only robust, but magical to interact with." 
       />
       
       <SkillsSection />
@@ -33,8 +33,6 @@ export default function Home() {
       <JourneyTimeline />
       
       <AchievementsSection />
-      
-      <TestimonialCarousel />
 
       <ContactSection />
     </div>

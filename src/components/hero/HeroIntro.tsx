@@ -55,7 +55,7 @@ export default function HeroIntro() {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="mt-6 text-xl md:text-3xl text-gray-400 font-light tracking-wide text-center max-w-2xl"
               >
-                Creative Developer & Designer
+                Full Stack Developer & AI Enthusiast
               </motion.div>
             )}
           </motion.div>

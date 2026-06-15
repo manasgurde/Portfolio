@@ -7,26 +7,18 @@ import { useStore } from '@/store/useStore';
 import SkillMesh from './SkillMesh';
 
 const SKILLS = [
-  // Languages
-  { name: 'JavaScript', color: '#f7df1e', pos: [-2, 1, -1] as [number, number, number] },
-  { name: 'Python', color: '#3776ab', pos: [2, 1.5, -2] as [number, number, number] },
-  { name: 'C++', color: '#00599c', pos: [0, 2.5, -3] as [number, number, number] },
-  
-  // Frontend
   { name: 'React.js', color: '#61dafb', pos: [-3, -0.5, 0] as [number, number, number] },
-  { name: 'Next.js', color: '#ffffff', pos: [-1.5, -1.5, 1] as [number, number, number] },
+  { name: 'JavaScript', color: '#f7df1e', pos: [-1.5, -1.5, 1] as [number, number, number] },
   { name: 'Tailwind CSS', color: '#38b2ac', pos: [1.5, -1, 0.5] as [number, number, number] },
-  { name: 'HTML5/CSS3', color: '#e34f26', pos: [3, 0, -1] as [number, number, number] },
-  
-  // Backend & DB
+  { name: 'Python', color: '#3776ab', pos: [3, 0, -1] as [number, number, number] },
   { name: 'Node.js', color: '#339933', pos: [-1, 0.5, 2] as [number, number, number] },
   { name: 'Express.js', color: '#eeeeee', pos: [1, 0, 1.5] as [number, number, number] },
   { name: 'PostgreSQL', color: '#336791', pos: [2.5, -2, -1.5] as [number, number, number] },
   { name: 'Supabase', color: '#3ecf8e', pos: [-2.5, 1.5, 1] as [number, number, number] },
-  
-  // Tools
-  { name: 'Git/GitHub', color: '#f05032', pos: [0, -2.5, -0.5] as [number, number, number] },
-  { name: 'VS Code', color: '#007acc', pos: [-3.5, 0.5, -2] as [number, number, number] },
+  { name: 'C++', color: '#00599c', pos: [0, -2.5, -0.5] as [number, number, number] },
+  { name: 'REST APIs', color: '#007acc', pos: [-3.5, 0.5, -2] as [number, number, number] },
+  { name: 'Git/GitHub', color: '#f05032', pos: [2, 2, 0] as [number, number, number] },
+  { name: 'AI Integration', color: '#ff3366', pos: [-1, 2.5, -1] as [number, number, number] }
 ];
 
 export default function SkillsEcosystem() {

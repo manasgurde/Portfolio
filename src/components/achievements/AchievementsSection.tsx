@@ -8,10 +8,10 @@ import { useStore } from '@/store/useStore';
 gsap.registerPlugin(ScrollTrigger);
 
 const ACHIEVEMENTS = [
-  { title: "Awwwards Site of the Day", year: "2025", desc: "Recognized for innovative scroll storytelling and 3D web experiences." },
-  { title: "FWA of the Month", year: "2024", desc: "Awarded for the most cutting edge digital work in December." },
-  { title: "CSS Design Awards", year: "2023", desc: "Best UI, Best UX, and Best Innovation." },
-  { title: "Top 10 Developer on GitHub", year: "2022", desc: "Trending developer in the open source creative coding space." }
+  { title: "Generative AI Certification", year: "2024", desc: "LinkedIn Learning certification on the fundamentals and applications of Generative AI." },
+  { title: "Prompt Engineering Certification", year: "2024", desc: "IBM certification covering advanced prompt engineering techniques for LLMs." },
+  { title: "Fundamentals of Deep Learning", year: "2023", desc: "NVIDIA Deep Learning Institute certification." },
+  { title: "SQL (Advanced) & NPTEL HCI", year: "2023", desc: "HackerRank certification demonstrating advanced SQL querying, alongside NPTEL User-Centric Computing certification." }
 ];
 
 export default function AchievementsSection() {

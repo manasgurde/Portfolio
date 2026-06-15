@@ -8,10 +8,10 @@ import { useStore } from '@/store/useStore';
 gsap.registerPlugin(ScrollTrigger);
 
 const TIMELINE_DATA = [
-  { year: "2026", title: "Senior Creative Developer", company: "Awwwards Studio", description: "Leading the development of highly interactive web experiences." },
-  { year: "2024", title: "Frontend Engineer", company: "Tech Innovators", description: "Built scalable React applications and migrated legacy systems to Next.js." },
-  { year: "2022", title: "Web Developer", company: "Digital Agency", description: "Crafted pixel-perfect websites for high-profile clients." },
-  { year: "2020", title: "Computer Science Degree", company: "University of Tech", description: "Graduated with honors, specializing in Human-Computer Interaction." }
+  { year: "2027", title: "B.Tech in Computer Science Engineering", company: "Madhav Institute of Technology and Science, Gwalior", description: "Currently pursuing degree with a focus on core computer science, software engineering, and artificial intelligence. CGPA: 7.69" },
+  { year: "2024", title: "AI SaaS Application Developer", company: "Full Stack Project", description: "Developed a scalable AI-powered SaaS platform utilizing a modern full-stack framework." },
+  { year: "2023", title: "Machine Learning Engineer", company: "Python Project", description: "Built a machine learning model to identify fraudulent credit card transactions, optimizing fraud detection accuracy." },
+  { year: "2022", title: "Full Stack Developer", company: "React & Node.js Project", description: "Developed an AI-powered job portal featuring intelligent job matching and recommendations." }
 ];
 
 export default function JourneyTimeline() {

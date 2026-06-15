@@ -126,7 +126,13 @@ export default function ContactSection() {
       </div>
       
       <div className="mt-20 text-center text-gray-500 text-sm">
-        <p>&copy; {new Date().getFullYear()} Manas. All rights reserved.</p>
+        <div className="flex flex-wrap justify-center gap-6 mb-6">
+          <a href="https://linkedin.com/in/manas-gurdeb39596408" target="_blank" className="hover:text-white transition-colors">LinkedIn</a>
+          <a href="https://github.com/manasgurde21" target="_blank" className="hover:text-white transition-colors">GitHub</a>
+          <a href="mailto:manasgurde45@gmail.com" className="hover:text-white transition-colors">manasgurde45@gmail.com</a>
+          <a href="tel:+916263400449" className="hover:text-white transition-colors">+91 6263400449</a>
+        </div>
+        <p>&copy; {new Date().getFullYear()} Manas Gurde. All rights reserved.</p>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@
 
 import { useRef, useMemo, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Points, PointMaterial, PerformanceMonitor } from '@react-three/drei';
+import { Points, PointMaterial, PerformanceMonitor, Sphere, MeshDistortMaterial, Float } from '@react-three/drei';
 // @ts-expect-error missing types
 import * as random from 'maath/random/dist/maath-random.esm';
 import * as THREE from 'three';
@@ -68,6 +68,36 @@ function ParticleCloud({ count = 5000 }: { count?: number }) {
   );
 }
 
+function AmbientOrb() {
+  const materialRef = useRef<any>(null);
+  const activeChapter = useStore((state) => state.activeChapter);
+
+  useFrame((state) => {
+    if (materialRef.current) {
+      const targetColor = CHAPTER_COLORS[Math.min(activeChapter, CHAPTER_COLORS.length - 1)] || CHAPTER_COLORS[0];
+      materialRef.current.color.lerp(targetColor, 0.03);
+    }
+  });
+
+  return (
+    <Float speed={2} rotationIntensity={0.5} floatIntensity={1.5}>
+      <Sphere args={[2.5, 64, 64]} position={[0, 0, -4]}>
+        <MeshDistortMaterial 
+          ref={materialRef}
+          color="#4f46e5"
+          attach="material"
+          distort={0.4}
+          speed={1.5}
+          roughness={0.2}
+          metalness={0.8}
+          transparent={true}
+          opacity={0.6}
+        />
+      </Sphere>
+    </Float>
+  );
+}
+
 export default function ParticleBackground() {
   const [particleCount, setParticleCount] = useState(5000);
 
@@ -83,7 +113,11 @@ export default function ParticleBackground() {
             setParticleCount(1500);
           }} 
         />
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={0.6} />
+        <directionalLight position={[10, 10, 5]} intensity={1.5} color="#ffffff" />
+        <pointLight position={[-10, -10, -5]} intensity={1} color="#a5b4fc" />
+        
+        <AmbientOrb />
         <ParticleCloud count={particleCount} />
         <SkillsEcosystem />
         <CameraController />

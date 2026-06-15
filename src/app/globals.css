@@ -34,7 +34,7 @@
   height: 100vh;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(circle at top right, #0d1428 0%, #000000 60%);
+  background: radial-gradient(circle at top left, #1c1538 0%, #0a0b16 50%, #081121 100%);
 }
 
 /* Hide scrollbar for carousel */

@@ -8,8 +8,10 @@ import { useStore } from '@/store/useStore';
 gsap.registerPlugin(ScrollTrigger);
 
 const TIMELINE_DATA = [
-  { year: "2024", title: "Full Stack & AI Development", company: "Projects & Learning", description: "Started building real-world applications using React, Node.js, and modern AI frameworks. Developed scalable SaaS and machine learning solutions." },
-  { year: "2023", title: "Started B.Tech in Computer Science", company: "Madhav Institute of Technology and Science, Gwalior", description: "Joined college to pursue degree with a focus on core computer science, software engineering, and artificial intelligence." }
+  { year: "2026", title: "AI & Intelligent Automation", company: "Specialization", description: "Focused on AI-powered products, prompt engineering, intelligent automation and SaaS applications." },
+  { year: "2025", title: "Full Stack Engineering", company: "Web Architecture", description: "Built full-stack applications using Node.js, PostgreSQL and Supabase." },
+  { year: "2024", title: "Web Development", company: "Frontend Frameworks", description: "Learned web development using HTML, CSS, JavaScript and React." },
+  { year: "2023", title: "Programming Foundations", company: "C & Problem Solving", description: "Started programming with C and basic problem solving." }
 ];
 
 export default function JourneyTimeline() {

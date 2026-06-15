@@ -104,6 +104,21 @@ export default function HeroIntro() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <motion.a 
+        href="#contact"
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: stage >= 2 ? 1 : 0, x: stage >= 2 ? 0 : 20 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="absolute bottom-8 right-8 pointer-events-auto flex items-center gap-3 px-6 py-3 rounded-full bg-indigo-600/20 border border-indigo-500/50 hover:bg-indigo-600 text-white transition-all shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_30px_rgba(79,70,229,0.8)] backdrop-blur-md group"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        <span className="font-semibold tracking-wide">Let's Talk</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </motion.a>
     </div>
   );
 }

@@ -52,7 +52,10 @@ export default function CurrentlyLearning() {
         {TOPICS.map((topic, idx) => (
           <div 
             key={idx} 
-            className="learning-card flex items-center gap-4 px-8 py-6 rounded-3xl bg-[#050510]/60 backdrop-blur-xl border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-300 group cursor-default"
+            className="learning-card flex items-center gap-4 px-8 py-6 rounded-3xl bg-[#050510]/60 backdrop-blur-xl border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:scale-110 hover:border-white/30 transition-all duration-300 group cursor-default"
+            style={{ boxShadow: `0 10px 30px rgba(0,0,0,0.3)` }}
+            onMouseEnter={(e) => e.currentTarget.style.boxShadow = `0 0 40px ${topic.color}40, inset 0 0 20px ${topic.color}10`}
+            onMouseLeave={(e) => e.currentTarget.style.boxShadow = `0 10px 30px rgba(0,0,0,0.3)`}
           >
             <div className="text-4xl" style={{ textShadow: `0 0 20px ${topic.color}` }}>
               {topic.icon}

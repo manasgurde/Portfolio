@@ -23,7 +23,7 @@ export default function Home() {
       <StoryChapter 
         index={2} 
         title="The Vision" 
-        content="From machine learning algorithms to responsive React frontends, I strive to bridge the gap between complex AI logic and user-centric software design. I believe in writing code that is not only robust, but magical to interact with." 
+        content="My vision is to build intelligent software products that combine AI and modern web technologies to solve real-world problems. I aim to specialize in AI-powered SaaS applications, automation systems, and developer tools that create measurable impact for businesses and users." 
       />
       
       <SkillsSection />

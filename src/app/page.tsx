@@ -9,8 +9,8 @@ import ContactSection from "@/components/contact/ContactSection";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen overflow-y-auto overflow-x-hidden snap-y snap-mandatory scroll-smooth">
-      <section className="relative w-full h-screen snap-center">
+    <main className="w-full relative overflow-x-hidden">
+      <section className="relative w-full h-screen">
         <HeroIntro />
       </section>
       
@@ -35,6 +35,6 @@ export default function Home() {
       <AchievementsSection />
 
       <ContactSection />
-    </div>
+    </main>
   );
 }

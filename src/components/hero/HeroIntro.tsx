@@ -21,7 +21,11 @@ export default function HeroIntro() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen z-10 pointer-events-none">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen z-10 pointer-events-none relative">
+      <div className="absolute top-8 w-full px-8 md:px-16 flex justify-end gap-8 pointer-events-auto z-50">
+        <a href="https://github.com/manasgurde21" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm uppercase tracking-widest font-semibold">GitHub</a>
+        <a href="https://linkedin.com/in/manas-gurdeb39596408" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm uppercase tracking-widest font-semibold">LinkedIn</a>
+      </div>
       <AnimatePresence mode="wait">
         {stage === 0 && (
           <motion.h1

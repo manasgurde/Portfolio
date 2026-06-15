@@ -18,7 +18,7 @@
 
   /* Cinematic text gradient utilities */
   .text-gradient {
-    background: linear-gradient(to right, #ffffff, #888888);
+    background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #818cf8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -34,7 +34,7 @@
   height: 100vh;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(circle at center, #111111 0%, #000000 100%);
+  background: radial-gradient(circle at top right, #0d1428 0%, #000000 60%);
 }
 
 /* Hide scrollbar for carousel */

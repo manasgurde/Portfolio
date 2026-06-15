@@ -63,14 +63,19 @@ export default function ProjectsShowcase() {
   }, [setActiveChapter]);
 
   return (
-    <section ref={sectionRef} className="relative w-full min-h-screen py-24 px-8 md:px-32 flex flex-col justify-center snap-center bg-transparent">
-      <div className="mb-16 z-20">
-        <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Selected Works</h2>
+    <section ref={sectionRef} className="relative w-full py-32 px-8 md:px-32 flex flex-col justify-start bg-transparent">
+      <div className="mb-24 z-20 text-center">
+        <h2 className="text-5xl md:text-7xl font-bold text-white tracking-tight text-gradient">Selected Works</h2>
+        <p className="mt-4 text-xl text-gray-400">Scroll to explore</p>
       </div>
       
-      <div className="flex flex-col gap-12 w-full max-w-5xl mx-auto">
+      <div className="relative w-full max-w-5xl mx-auto pb-32">
         {PROJECTS.map((project, idx) => (
-          <div key={idx} className="w-full">
+          <div 
+            key={idx} 
+            className="w-full sticky mb-24 transition-transform duration-500"
+            style={{ top: `calc(15vh + ${idx * 2}rem)` }}
+          >
             <ProjectCard {...project} />
           </div>
         ))}

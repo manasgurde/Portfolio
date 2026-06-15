@@ -12,14 +12,14 @@ import { useStore } from '@/store/useStore';
 
 const CHAPTER_COLORS = [
   new THREE.Color('#ffffff'), // Intro (0)
-  new THREE.Color('#ffaa00'), // Story 1 (1)
-  new THREE.Color('#aa00ff'), // Story 2 (2)
-  new THREE.Color('#00ffaa'), // Skills (3)
-  new THREE.Color('#0a192f'), // Projects Showcase (4)
-  new THREE.Color('#ff5555'), // Journey Timeline (5)
-  new THREE.Color('#ffcc00'), // Achievements (6)
-  new THREE.Color('#00ccff'), // Testimonials (7)
-  new THREE.Color('#001133'), // Contact (8)
+  new THREE.Color('#4f46e5'), // Story 1 (1) - Deep Indigo
+  new THREE.Color('#d946ef'), // Story 2 (2) - Neon Fuchsia
+  new THREE.Color('#0ea5e9'), // Skills (3) - Bright Cyan
+  new THREE.Color('#10b981'), // Projects Showcase (4) - Emerald
+  new THREE.Color('#f43f5e'), // Journey Timeline (5) - Rose Red
+  new THREE.Color('#eab308'), // Achievements (6) - Cyber Yellow
+  new THREE.Color('#8b5cf6'), // Testimonials (7) - Vivid Violet
+  new THREE.Color('#020617'), // Contact (8) - Midnight Abyss
 ];
 
 function ParticleCloud({ count = 5000 }: { count?: number }) {
@@ -58,10 +58,10 @@ function ParticleCloud({ count = 5000 }: { count?: number }) {
           ref={materialRef}
           transparent
           color="#ffffff"
-          size={0.05}
+          size={0.06}
           sizeAttenuation={true}
           depthWrite={false}
-          opacity={0.6}
+          opacity={0.8}
         />
       </Points>
     </group>

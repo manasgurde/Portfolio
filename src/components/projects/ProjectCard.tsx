@@ -8,11 +8,12 @@ interface ProjectCardProps {
   image: string;
   color: string;
   link?: string;
+  liveLink?: string;
   isReversed?: boolean;
   metrics?: { label: string; value: string }[];
 }
 
-export default function ProjectCard({ title, subtitle, description, stack, image, color, link, isReversed = false, metrics }: ProjectCardProps) {
+export default function ProjectCard({ title, subtitle, description, stack, image, color, link, liveLink, isReversed = false, metrics }: ProjectCardProps) {
   return (
     <div className={`w-full min-h-[60vh] flex flex-col md:flex-row ${isReversed ? 'md:flex-row-reverse' : ''} items-center gap-12 p-8 md:p-16 rounded-[2.5rem] bg-[#050510]/80 backdrop-blur-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden group`}>
       {/* Dynamic Background Glow */}
@@ -62,16 +63,28 @@ export default function ProjectCard({ title, subtitle, description, stack, image
           </div>
         )}
         
-        {link && (
-          <a 
-            href={link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center text-white bg-white/10 hover:bg-white/20 px-6 py-3 rounded-full transition-all font-medium w-fit border border-white/10 hover:border-white/30"
-          >
-            View Project <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-          </a>
-        )}
+        <div className="flex flex-wrap gap-4 mt-4">
+          {link && (
+            <a 
+              href={link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-white bg-white/10 hover:bg-white/20 px-6 py-3 rounded-full transition-all font-medium border border-white/10 hover:border-white/30"
+            >
+              GitHub <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+          )}
+          {liveLink && (
+            <a 
+              href={liveLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-[#050510] bg-white hover:bg-gray-200 px-6 py-3 rounded-full transition-all font-bold border border-transparent shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105"
+            >
+              Live App <span className="ml-2 transition-transform">↗</span>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

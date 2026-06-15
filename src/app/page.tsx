@@ -17,13 +17,13 @@ export default function Home() {
       <StoryChapter 
         index={1} 
         title="The Journey" 
-        content="I am a motivated Full Stack Developer and AI enthusiast, currently pursuing my B.Tech in Computer Science. My passion lies in building intelligent, scalable web applications that solve real-world problems." 
+        content="My journey began with a curiosity for technology and problem-solving. Over time, I transitioned from learning programming fundamentals to building full-stack applications, AI-powered tools, and scalable web platforms. Each project has strengthened my passion for creating intelligent systems that solve real-world challenges and deliver meaningful user experiences." 
       />
       
       <StoryChapter 
         index={2} 
         title="The Vision" 
-        content="My vision is to build intelligent software products that combine AI and modern web technologies to solve real-world problems. I aim to specialize in AI-powered SaaS applications, automation systems, and developer tools that create measurable impact for businesses and users." 
+        content="I envision a future where intelligent software empowers people to work smarter, create faster, and solve problems more effectively. My goal is to build AI-powered products, automation systems, and scalable SaaS solutions that generate measurable impact and bridge the gap between innovation and practicality." 
       />
       
       <SkillsSection />

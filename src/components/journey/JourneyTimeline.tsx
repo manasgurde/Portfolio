@@ -69,7 +69,7 @@ export default function JourneyTimeline() {
   return (
     <section ref={sectionRef} className="relative w-full min-h-screen py-24 px-8 md:px-32 flex flex-col justify-center snap-center bg-transparent z-10 overflow-hidden">
       <div className="mb-16 z-20 text-center">
-        <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">The Journey</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Career Timeline</h2>
       </div>
       
       <div className="relative w-full max-w-4xl mx-auto py-10">

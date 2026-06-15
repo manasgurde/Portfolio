@@ -54,7 +54,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section ref={sectionRef} className="relative w-full min-h-screen py-24 flex flex-col justify-center snap-center bg-transparent z-10 px-8 md:px-32">
+    <section id="contact" ref={sectionRef} className="relative w-full min-h-screen py-24 flex flex-col justify-center snap-center bg-transparent z-10 px-8 md:px-32">
       <div className="max-w-4xl mx-auto w-full text-center mb-12">
         <h2 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-4">Let's Talk</h2>
         <p className="text-xl text-gray-400">Ready to build something magical together?</p>

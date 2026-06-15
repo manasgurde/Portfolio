@@ -71,7 +71,7 @@ export default function HeroIntro() {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="mt-6 text-xl md:text-3xl text-gray-400 font-light tracking-wide text-center max-w-2xl"
               >
-                Full Stack Developer & AI Enthusiast
+                Full Stack Developer Specializing in AI, SaaS & Intelligent Systems
               </motion.div>
             )}
           </motion.div>

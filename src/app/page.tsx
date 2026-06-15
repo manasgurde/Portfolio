@@ -2,9 +2,9 @@ import HeroIntro from "@/components/hero/HeroIntro";
 import StoryChapter from "@/components/story/StoryChapter";
 import ProjectsShowcase from "@/components/projects/ProjectsShowcase";
 import SkillsSection from "@/components/skills/SkillsSection";
+import CurrentlyLearning from "@/components/skills/CurrentlyLearning";
 import JourneyTimeline from "@/components/journey/JourneyTimeline";
 import AchievementsSection from "@/components/achievements/AchievementsSection";
-import TestimonialCarousel from "@/components/testimonials/TestimonialCarousel";
 import ContactSection from "@/components/contact/ContactSection";
 
 export default function Home() {
@@ -27,6 +27,8 @@ export default function Home() {
       />
       
       <SkillsSection />
+      
+      <CurrentlyLearning />
 
       <ProjectsShowcase />
 

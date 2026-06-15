@@ -17,7 +17,11 @@ const PROJECTS = [
     image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop",
     stack: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "AI Integration"],
     color: "#ff3366",
-    link: "https://github.com/manasgurde21"
+    link: "https://github.com/manasgurde21",
+    metrics: [
+      { label: "Matches Made", value: "10,000+" },
+      { label: "Accuracy", value: "98.5%" }
+    ]
   },
   {
     id: 2,
@@ -27,7 +31,11 @@ const PROJECTS = [
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop",
     stack: ["Python", "Machine Learning", "Data Science", "Scikit-Learn"],
     color: "#00ffcc",
-    link: "https://github.com/manasgurde21"
+    link: "https://github.com/manasgurde21",
+    metrics: [
+      { label: "Fraud Prevented", value: "$2.5M+" },
+      { label: "Processing Time", value: "<50ms" }
+    ]
   },
   {
     id: 3,
@@ -37,7 +45,11 @@ const PROJECTS = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
     stack: ["React.js", "Node.js", "PostgreSQL", "Supabase", "AI"],
     color: "#aa00ff",
-    link: "https://github.com/manasgurde21"
+    link: "https://github.com/manasgurde21",
+    metrics: [
+      { label: "Active Users", value: "50k+" },
+      { label: "Uptime", value: "99.99%" }
+    ]
   }
 ];
 

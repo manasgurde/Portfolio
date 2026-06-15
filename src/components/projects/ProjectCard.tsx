@@ -9,9 +9,10 @@ interface ProjectCardProps {
   color: string;
   link?: string;
   isReversed?: boolean;
+  metrics?: { label: string; value: string }[];
 }
 
-export default function ProjectCard({ title, subtitle, description, stack, image, color, link, isReversed = false }: ProjectCardProps) {
+export default function ProjectCard({ title, subtitle, description, stack, image, color, link, isReversed = false, metrics }: ProjectCardProps) {
   return (
     <div className={`w-full min-h-[60vh] flex flex-col md:flex-row ${isReversed ? 'md:flex-row-reverse' : ''} items-center gap-12 p-8 md:p-16 rounded-[2.5rem] bg-[#050510]/80 backdrop-blur-2xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden group`}>
       {/* Dynamic Background Glow */}
@@ -49,6 +50,17 @@ export default function ProjectCard({ title, subtitle, description, stack, image
             </span>
           ))}
         </div>
+        
+        {metrics && metrics.length > 0 && (
+          <div className="flex gap-4 mt-2">
+            {metrics.map((metric, idx) => (
+              <div key={idx} className="flex flex-col items-start bg-white/5 border border-white/10 rounded-2xl p-4 min-w-[120px] backdrop-blur-md">
+                <span className="text-2xl font-bold tracking-tight" style={{ color }}>{metric.value}</span>
+                <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">{metric.label}</span>
+              </div>
+            ))}
+          </div>
+        )}
         
         {link && (
           <a 

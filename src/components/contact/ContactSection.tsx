@@ -127,7 +127,7 @@ export default function ContactSection() {
       
       <div className="mt-20 text-center text-gray-500 text-sm">
         <div className="flex flex-wrap justify-center gap-6 mb-6">
-          <a href="https://linkedin.com/in/manas-gurdeb39596408" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/manas-gurde-b39596408" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
           <a href="https://github.com/manasgurde" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
           <a href="mailto:manasgurde45@gmail.com" className="hover:text-white transition-colors">manasgurde45@gmail.com</a>
         </div>

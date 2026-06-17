@@ -8,10 +8,10 @@ import { useStore } from '@/store/useStore';
 gsap.registerPlugin(ScrollTrigger);
 
 const ACHIEVEMENTS = [
-  { title: "Generative AI Certification", year: "2024", desc: "LinkedIn Learning certification on the fundamentals and applications of Generative AI." },
-  { title: "Prompt Engineering Certification", year: "2024", desc: "IBM certification covering advanced prompt engineering techniques for LLMs." },
-  { title: "Fundamentals of Deep Learning", year: "2023", desc: "NVIDIA Deep Learning Institute certification." },
-  { title: "SQL (Advanced) & NPTEL HCI", year: "2023", desc: "HackerRank certification demonstrating advanced SQL querying, alongside NPTEL User-Centric Computing certification." }
+  { title: "Generative AI Certification", year: "2026", desc: "LinkedIn Learning certification on the fundamentals and applications of Generative AI." },
+  { title: "Prompt Engineering Certification", year: "2026", desc: "IBM certification covering advanced prompt engineering techniques for LLMs." },
+  { title: "Fundamentals of Deep Learning", year: "2024", desc: "NVIDIA Deep Learning Institute certification." },
+  { title: "SQL (Advanced)", year: "2026", desc: "HackerRank certification demonstrating advanced SQL querying." }
 ];
 
 export default function AchievementsSection() {
